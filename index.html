@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TrueNAS Backup is a private, non-commercial utility for creating encrypted backups of personal files in Google Drive.">
+  <meta name="referrer" content="no-referrer">
+  <title>TrueNAS Backup — Private Backup Utility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="TrueNAS Backup home"><span class="brand-icon" aria-hidden="true">◈</span> TrueNAS Backup</a>
+      <nav aria-label="Site navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="main-title">
+        <p class="eyebrow">PRIVATE · NON-COMMERCIAL · PERSONAL USE</p>
+        <h1 id="main-title">Encrypted backups for a personal TrueNAS server.</h1>
+        <p class="lead">TrueNAS Backup is a private utility that allows its owner to store and restore encrypted backups of files from a self-hosted TrueNAS server in the owner's own Google Drive account.</p>
+        <div class="notice">This project is for its owner's personal use. It is not a public backup service and does not offer accounts or access to third parties.</div>
+      </section>
+
+      <section aria-labelledby="what-it-does">
+        <h2 id="what-it-does">What this application does</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Back up selected files</h3>
+            <p>The owner selects folders on a personally operated TrueNAS server to include in backup jobs.</p>
+          </article>
+          <article class="card">
+            <h3>Encrypt before upload</h3>
+            <p>Restic encrypts backup data locally before it is transferred to cloud storage.</p>
+          </article>
+          <article class="card">
+            <h3>Manage backup history</h3>
+            <p>Backrest manages scheduled backup jobs, retention and restoration. Rclone communicates with Google Drive.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="google-access">
+        <h2 id="google-access">Why Google Drive access is requested</h2>
+        <p>Google OAuth authorization is used solely to create, read, update and delete the application's backup repository files in the owner's Google Drive account. The requested <code>drive.file</code> permission limits access to files used with this application. The app does not request access to Gmail, contacts, calendars or unrelated Google Drive files.</p>
+        <p>Backup contents are encrypted before upload. Google Drive stores the encrypted repository; it is not used to provide a public download or sharing service.</p>
+      </section>
+
+      <section class="details" aria-labelledby="data-use">
+        <h2 id="data-use">Privacy and security</h2>
+        <p>This informational website has no login form, advertising, analytics scripts or tracking cookies added by its owner. OAuth credentials and repository encryption passwords are not entered into this website.</p>
+        <p>For details on how the backup utility accesses, stores, retains and deletes data, please read the <a href="privacy.html">Privacy Policy</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>TrueNAS Backup · Personal utility · Not affiliated with Google, TrueNAS, Restic, Rclone or Backrest.</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></span>
+    </footer>
+  </div>
+</body>
+</html>

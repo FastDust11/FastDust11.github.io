@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for TrueNAS Backup, a private encrypted Google Drive backup utility.">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy — TrueNAS Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">◈</span> TrueNAS Backup</a>
+      <nav aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <p class="eyebrow">PERSONAL BACKUP UTILITY</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: October 28, 2026</p>
+      <p>TrueNAS Backup ("the application") is a privately operated, non-commercial backup workflow used by its owner. It combines Restic, Rclone and Backrest to store encrypted backups in the owner's Google Drive account. The application is not offered to the public and does not create accounts for other users.</p>
+
+      <h2>1. Data accessed</h2>
+      <p>With the owner's authorization, the application accesses files and folders in Google Drive that are created or used with this application. It uses the Google Drive API with the <code>https://www.googleapis.com/auth/drive.file</code> scope. The application also reads local files explicitly selected by the owner for backup.</p>
+      <p>The application does not request access to Gmail, contacts, calendar information or unrelated Google Drive content.</p>
+
+      <h2>2. Purpose and use</h2>
+      <p>Google Drive access is used only to create, upload, list, read, update, restore and remove encrypted backup repository objects as necessary for backup execution, retention, integrity checking and recovery. Data is not used for advertising, profiling, AI model training or analytics.</p>
+
+      <h2>3. Storage and encryption</h2>
+      <p>Restic encrypts backup contents and associated file information on the owner's system before upload. Google Drive stores the resulting encrypted repository. The repository password is controlled by the owner and is not uploaded as part of the backup repository.</p>
+      <p>OAuth authorization tokens and application configuration are stored in the owner's self-hosted backup environment and are not collected by this informational website. The owner is responsible for protecting those credentials and encryption keys.</p>
+
+      <h2>4. Sharing and disclosure</h2>
+      <p>The application does not sell, rent or share Google user data with advertisers or unrelated third parties. Encrypted backup objects are transferred to Google Drive to provide the storage function requested by the owner. No public file-sharing feature is provided.</p>
+
+      <h2>5. Retention and deletion</h2>
+      <p>Backup snapshots and repository objects are retained according to schedules and retention rules set by the owner. The owner can delete the encrypted backup repository from Google Drive. Revoking OAuth access prevents further authorized access by the application but does not automatically delete files already stored in Google Drive.</p>
+      <p>The owner can revoke the application's access in <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Google Account connection settings</a>. Backup files can be deleted from Google Drive through the account's storage controls.</p>
+
+      <h2>6. Website data</h2>
+      <p>This public informational website does not include a sign-in function, owner-operated analytics, advertising pixels, tracking scripts or cookies set by the website's code. The website is hosted using GitHub Pages. GitHub may process technical connection data under its own privacy policy.</p>
+
+      <h2>7. Security</h2>
+      <p>The backup workflow uses encrypted transport to connect to Google Drive. Backup content is encrypted before it is uploaded. Access is limited through Google's OAuth permission system and by credentials stored in the owner's environment. No security measure guarantees absolute protection, and the owner remains responsible for safe storage of the encryption password and for testing restores.</p>
+
+      <h2>8. Changes and contact</h2>
+      <p>This policy may be updated when the application's behavior changes. For questions about the application or this policy, contact the owner using the support email shown on the application's Google OAuth consent screen.</p>
+      <p class="notice">This application is operated only for the owner's personal backup needs. It does not accept registrations, submissions or data from external users.</p>
+    </main>
+
+    <footer>
+      <span>TrueNAS Backup · Personal utility</span>
+      <span><a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a></span>
+    </footer>
+  </div>
+</body>
+</html>
